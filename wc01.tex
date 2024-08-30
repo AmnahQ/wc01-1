@@ -6,7 +6,7 @@
 \usepackage{hyperref}
 
 \title{Weekly Challenge 01: Discrete Maths Refresher}
-\author{CS 212 Nature of Computation\\Habib University}
+\author{CS 212 Nature of Computation\\Habib University\\Amnah Qureshi\\08004}
 \date{Fall 2024}
 
 \qformat{{\large\bf \thequestion. \thequestiontitle}\hfill}
@@ -31,12 +31,53 @@ Lucky for you, he left clues behind to find the Chrononavigator. By using the fo
     \item The Chrononavigator is not in the Plumber's headquarters.
 \end{itemize}
 
+\begin{answer}
+
+
+Answer:
+
+
+A: Mr.Smoothy is next to a Burger shack
+
+
+B: Chrononavigator is in the Plumber’s headquarters
+
+
+C: Chrononavigator is buried under Baumann’s Store
+
+
+D: Tree in the front of Billion Tower is an elm
+
+
+E: Tree in the back of Billion Tower is an oak
+
+
+F: Chrononavigator is in the Argistix Security office
+
+A \rightarrow B
+
+\;\;\; (\sim A \vee C) \rightarrow (D \wedge \sim E)
+
+\;\;\; F \rightarrow  \sim E
+
+\;\;\; \sim C \rightarrow  \sim D
+
+\;\;\; \sim B
+
+Since Chromonavigator is not in the Plumber's headquarters as the last statement says, that means Mr.Smoothy is not next to a Burger Shack as the first statement says, if A then B. Clue 2 seems to be true because Mr.Smoothy is not next to a Burger shack. According to clue 2 the tree in front of billion tower is an elm and the tree in the back of billion tower is not an oak, this suggests that the 4th clue is false that the chromonavigator is not burried under the Baumman's store because the tree infront of the billio tower is an elm. This concludes that the chromonavigator is burried under the Baumann's store.
+
+\end{answer}
+
 \titledquestion{Over 9000!!}
 For a set $X$, $\mathcal{P}(X)$ denotes the powerset of $X$.
 Show that $ \mathcal{P}(A) \subseteq \mathcal {P}(B)$ if and only if $ A \subseteq B$.
-\begin{solution}
-    
-\end{solution}
+\begin{answer}
+Answer:
+
+Proof by contradiction:
+
+Let's assume that A is not a subset of B but P(A) is a subset of P(B). This means there exists an element x in the set A which does not exist in the set B. But our assumption says that P(A) is a subset of P(B) which means that element x should be in the subset of B. This is contradicting our statement so our assumption that A is not a subset of B has to be incorrect. Thus P(A) is a subset of P(B) if and only if A is a subset of B.
+\end{answer}
 
 
 \titledquestion{Skibidi coloring}
@@ -45,9 +86,16 @@ coloring the graph $G$ is defined as assigning a color to each vertex of $G$ suc
 If a graph can be colored with $k$ colors we say it is $k$-colorable.
 
 Prove that a graph is bipartite if and only if its 2-colorable.
-\begin{solution}
+\begin{answer}
 
-\end{solution}
+Answer:
+
+To prove that a graph is bipartite if it is 2 colorable, we can say that G is a bipartite graph which means it has two disjoint set of vertices. Since they are disjoint sets, no two vertices in the same set are connected by an edge. so if we colour one set of vertices let's say red and the other let's say blue then no adjacent vertex will have the same colour. Thus we can say that a bipartite graph is 2 colorable.
+
+To prove that is 2 colorable graph if it is bipartite, we can say that we will colour the vertices in such a way that no two adjacent vertices will have the same colour. Then we can assign colours to two sets of disjoint vertices, let's say red colour to one set of vertices and blue colour to another set of vertices. Since each vertex from the first set will be connected through an edge to the vertex of another set and not any vertex in its own set, we can say that since the graph is 2 colorable it is a bipartite graph.
+\end{answer}
+
+
 
  
 
